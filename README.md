@@ -27,4 +27,4 @@ Alerts can be in one of the following states: `Open`, `Acknowledged`, or `Closed
 Write a test plan for the system described above. The test plan should cover both alert lifecycle and notification systems. Please, assume that the tests will be automated and could be run anytime during development.
 
 ### Bonus
-Solar panels don't produce energy at night. Therefore, we had to introduce the configuration parameters `sunset` and `sunrise` that define a time period in the day when we do NOT create zero-gen alerts. Think about how you would test this configuration. Add a couple of test cases to your plan for this feature.
+Solar panels don't produce energy at night. Therefore, we had to introduce the configuration parameters `sunset` and `sunrise` that define a time period in the day when we do NOT create zero-gen alerts. These parameters could be set and read via an API. Think about how you would test this configuration. Add a couple of test cases to your plan for this feature.
