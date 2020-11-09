@@ -1,0 +1,7 @@
+Dear fellow engineers,
+By using python test framework, I wrote a test that makes sure that https://www.google.com/ is up.
+I created a unittest that checks the availability of the google page, the file is called TestGetGoogle.py.
+In order to run it successfully, make sure that you have installed Unittest and Requests packages.
+You can run the test using the following command in terminal:
+    python -m unittest -v
+It has ‘OK’ as the last line of the output if the test passed and ‘FAILED’ otherwise.
