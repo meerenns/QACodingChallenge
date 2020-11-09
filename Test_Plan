@@ -20,3 +20,10 @@ Check that the user does not receives an email every day when the system goes fr
 Check that the user does not receives an email every day when the system goes from ACKNOWLEDGE to CLOSE state
 
 *ZGA - zero generation alert
+
+Sunset/sunrise condition
+Check that if the energy is lost then an alert is created in the OPEN state if it's after sunrise
+Check that if the energy is lost then an alert is not created in the OPEN state if it's after sunset
+Check that ZGA is created when sunrise is occurred and there's no power from battery
+Check that ZGA is not created when sunrise is occurred and there is power from battery
+Check that no new ZGA is created when sunset is occurred
