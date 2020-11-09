@@ -1,0 +1,22 @@
+Also Energy / zero generation alerts
+
+Tasks to test alert lifecycle
+Check that if the energy is lost then an alert is created in the OPEN state
+Check that if energy is supplied then an alert is not generated
+Check that alert goes to CLOSE state if energy comes back
+Check that alert is not created when connection  to the battery is lost
+Check that if we lost energy again a new alert is created (alert in CLOSE state isn't updated)
+Check that If we have ZGA in created state and user acknowledge the system ZGA state becomes ACKNOWLEDGED
+Check that If we have ZGA in created state and the generation is not zero anymore ZGA state becomes CLOSED
+Check that If we have ZGA in ACKNOWLEDGED state and the generation is not zero anymore ZGA state becomes CLOSED
+
+Tasks to test notification systems
+Check that user receive email when the system enters the state OPEN
+Check that the user receives an email when the system goes from OPEN to CLOSE state
+Check that the user receives an email when the system goes from ACKNOWLEDGE to CLOSE state
+Check that the user receives an email every day when the system is in OPEN state
+Check that the user does not receives an email every day when the system goes from OPEN to ACKNOWLEDGE state
+Check that the user does not receives an email every day when the system goes from OPEN to CLOSE state
+Check that the user does not receives an email every day when the system goes from ACKNOWLEDGE to CLOSE state
+
+*ZGA - zero generation alert
